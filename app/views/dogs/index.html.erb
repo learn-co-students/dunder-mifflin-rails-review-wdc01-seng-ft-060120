@@ -1,0 +1,5 @@
+<ul>
+    <% @dogs.each do |dog| %>
+        <li><%= link_to dog, dog_path(params[:id]) %></li>
+    <% end %>
+</ul>
