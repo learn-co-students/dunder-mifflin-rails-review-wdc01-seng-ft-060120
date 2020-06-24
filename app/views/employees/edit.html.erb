@@ -1,0 +1,17 @@
+<%= form_for @employee do |f|%>
+<%= f.label "Employee First Name"%>
+<%= f.text_field :first_name %>
+<%= f.label "Employee last Name"%>
+<%= f.text_field :last_name %>
+<%= f.label "Employee Alias"%>
+<%= f.text_field :alias %>
+<%= f.label "Employee Office"%>
+<%= f.text_field :office %>
+<%= f.label "Employee Title"%>
+<%= f.text_field :title %>
+<%= f.label "Employee Photo URL"%>
+<%= f.text_field :img_url %>
+<%= f.label "Employee's Dog"%>
+<%= f.select :dog_id, Dog.all.map{|dog| [dog.name, dog.id]}%>
+<%= f.submit%>
+<% end%>

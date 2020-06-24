@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :dogs, only: [:index, :show]
-  resources :employees, only: [:index, :show, :new, :create]
+  resources :employees, only: [:index, :show, :new, :create, :edit, :update]
+  # post 'new', to: 'employees#create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
