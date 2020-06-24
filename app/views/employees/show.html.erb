@@ -1,9 +1,6 @@
 <h1>Employee:</h1>
-<h1><%= @employee.name %><h1><br>
-<div><%= @dog.breed %><div>
-<div><%= @dog.age %><div><br>
-
-<label>Owners:</label><br>
-<% @dog.employees.each do |employee| %>
-<%= employee.first_name %> <%= employee.last_name %>  <br>
-<% end %>
+<h1><%= @employee.first_name %> <%= @employee.last_name %> <h1><br>
+<div><%= @employee.alias %><div>
+<div><%= @employee.title %><div>
+<div><%= @employee.office %><div>
+<div><%= image_tag(@employee.img_url) %><div>
