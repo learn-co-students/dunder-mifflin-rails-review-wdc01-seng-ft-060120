@@ -1,7 +1,7 @@
 class DogsController < ApplicationController
     def index
         @dogs = Dog.all
-        byebug
+        # byebug
     end
     
     def show

@@ -1,0 +1,11 @@
+<h1> Employee</h1>
+
+<ul> 
+    <li> Name: <%= @employee.first_name + " " + @employee.last_name %></li>
+    <li> Alias: <%= @employee.alias %> </li>
+    <li> Title: <%= @employee.title %> </li>
+    <li> Office: <%= @employee.office %> </li>
+    <li> Dog: <%= @employee.dog.name %> </li>
+</ul>
+
+<%= link_to "employees page", employees_path %>

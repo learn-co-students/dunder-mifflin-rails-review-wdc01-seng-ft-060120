@@ -1,5 +1,6 @@
+<h1> list of dogs</h1>
 <ul>
     <% @dogs.each do |dog| %>
-        <li><%= link_to dog, dog_path(params[:id]) %></li>
+        <li><%= link_to dog.name, dog_path(dog) %></li>
     <% end %>
 </ul>
