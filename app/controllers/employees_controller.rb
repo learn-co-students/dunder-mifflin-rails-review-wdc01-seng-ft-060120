@@ -17,10 +17,12 @@ class EmployeesController < ApplicationController
         @employee = Employee.new
     end
     
-    def edit
+    def edit        
     end
     
     def update
+        @employee.update(employee_params)
+        redirect_to employee_path
     end
 
     private
