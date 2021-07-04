@@ -1,0 +1,17 @@
+<%= form_tag employees_path do %> 
+    <label> First name: </label>
+    <%= text_field_tag :'employee[first_name]' %>
+    <label> Last name: </label>
+    <%= text_field_tag :'employee[last_name]' %>
+    <label> Alias: </label>
+    <%= text_field_tag :'employee[alias]' %>
+    <label> Title: </label>
+    <%= text_field_tag :'employee[title]' %>
+    <label> Office </label>
+    <%= text_field_tag :'employee[office]' %>
+    <label> Img URL: </label>
+    <%= text_field_tag :'employee[img_url]' %>
+    <label> Dog: </label>
+    <%= select_tag :dog_id, options_for_select(Dog.dog_options) %>
+    <%= submit_tag %>
+<% end %>
